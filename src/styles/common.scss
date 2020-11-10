@@ -1,0 +1,137 @@
+//@font-face {
+//  font-weight: 400;
+//  font-family: 'Roboto';
+//  font-style: normal;
+//  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+//}
+//
+//@font-face {
+//  font-weight: 500;
+//  font-family: 'Roboto';
+//  font-style: normal;
+//  src: url('../assets/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+//}
+//
+//@font-face {
+//  font-weight: 700;
+//  font-family: 'Roboto';
+//  font-style: normal;
+//  src: url('../assets/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+//}
+//
+//@font-face {
+//  font-weight: 900;
+//  font-family: 'Roboto';
+//  font-style: normal;
+//  src: url('../assets/fonts/Roboto/Roboto-Black.ttf') format('truetype');
+//}
+
+html {
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  min-width: 420px;
+  min-height: 700px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fefefe;
+  cursor: default;
+}
+
+// Safari bounce fix
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+input,
+button,
+textarea {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+input,
+textarea {
+  font-family: sans-serif;
+}
+
+// кастомный скролл
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  position: relative;
+  left: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(85, 85, 85, 0.3);
+}
+
+// запрет на ресайз textarea
+body textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+a {
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+// Classes
+
+#root {
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow-y: auto;
+}
